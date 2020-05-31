@@ -5,7 +5,7 @@
 </h1>
 
 <h2 align="center">
-  Hello World in React Native on UI Kitten based on Eva Design System
+  Hello World in React Native UI Kitten based on Eva Design System
 </h2>
 
 <p align="center">
@@ -38,7 +38,13 @@ Ideal for those who do not want to waste time setting up an environment to start
 - `git clone https://github.com/jvjv33/hello_world_eva.git`
 - `cd hello_world_eva`
 - `npm i`
+
+### Android
 - `react-native run-android`
+
+### iOS
+- `npx pod-install ios`
+- `react-native run-ios`
 
 ## Features
 
