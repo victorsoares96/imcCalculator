@@ -46,6 +46,24 @@ Ideal for those who do not want to waste time setting up an environment to start
 - `npx pod-install ios`
 - `react-native run-ios`
 
+## Rename Project
+- `npx react-native-rename "new_name"`
+- In root project `app.json` file, change:
+``` json
+{
+  "name": "helloworldpaper",
+  "displayName": "helloworldpaper"
+}
+```
+to:
+``` json
+{
+  "name": "new_name",
+  "displayName": "new_name"
+}
+```
+- In iOS run `npx pod-install ios` again
+
 ## Features
 
 - [X] Tab Navigation (React Navigation v5.x)
