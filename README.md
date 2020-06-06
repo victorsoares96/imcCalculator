@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://akveo.github.io/react-native-ui-kitten/">
-    <img alt="CoronaInfo" src="https://user-images.githubusercontent.com/19741953/83339189-b34fb080-a2a1-11ea-9449-bf86ce88b598.png" width="300px" />
+    <img alt="hello_eva" src="https://user-images.githubusercontent.com/19741953/83339189-b34fb080-a2a1-11ea-9449-bf86ce88b598.png" width="300px" />
   </a>
 </h1>
 
@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jvjv33">
-    <img alt="Made by Victor Soares" src="https://img.shields.io/badge/made%20by-Victor%20Soares-blue">
+  <a href="https://github.com/victorsoares96">
+    <img alt="Made by Victor Soares" src="https://img.shields.io/badge/made%20by-victorsoares96-blue">
     <img alt="Version 1.0" src="https://img.shields.io/badge/version-1.0-brightgreen">
-    <img alt="shield" src="https://img.shields.io/david/jvjv33/hello_world_eva">
-    <img alt="size" src="https://img.shields.io/github/languages/code-size/jvjv33/hello_world_eva">
+    <img alt="shield" src="https://img.shields.io/david/victorsoares96/hello_world_eva">
+    <img alt="size" src="https://img.shields.io/github/languages/code-size/victorsoares96/hello_world_eva">
   </a>
 </p>
 
@@ -35,7 +35,7 @@ Ideal for those who do not want to waste time setting up an environment to start
   - [UI Kitten 5.0.0](https://akveo.github.io/react-native-ui-kitten)
 
 ## Instructions
-- `git clone https://github.com/jvjv33/hello_world_eva.git`
+- `git clone https://github.com/victorsoares96/hello_world_eva.git`
 - `cd hello_world_eva`
 - `npm i`
 
