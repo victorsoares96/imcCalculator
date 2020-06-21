@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "hello_world_eva-tvOS.app"
-               BlueprintName = "hello_world_eva-tvOS"
-               ReferencedContainer = "container:hello_world_eva.xcodeproj">
+               BuildableName = "imcCalculator-tvOS.app"
+               BlueprintName = "imcCalculator-tvOS"
+               ReferencedContainer = "container:imcCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "hello_world_eva-tvOSTests.xctest"
-               BlueprintName = "hello_world_eva-tvOSTests"
-               ReferencedContainer = "container:hello_world_eva.xcodeproj">
+               BuildableName = "imcCalculator-tvOSTests.xctest"
+               BlueprintName = "imcCalculator-tvOSTests"
+               ReferencedContainer = "container:imcCalculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "hello_world_eva-tvOS.app"
-            BlueprintName = "hello_world_eva-tvOS"
-            ReferencedContainer = "container:hello_world_eva.xcodeproj">
+            BuildableName = "imcCalculator-tvOS.app"
+            BlueprintName = "imcCalculator-tvOS"
+            ReferencedContainer = "container:imcCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "hello_world_eva-tvOS.app"
-            BlueprintName = "hello_world_eva-tvOS"
-            ReferencedContainer = "container:hello_world_eva.xcodeproj">
+            BuildableName = "imcCalculator-tvOS.app"
+            BlueprintName = "imcCalculator-tvOS"
+            ReferencedContainer = "container:imcCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

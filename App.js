@@ -31,8 +31,8 @@ import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import * as eva from '@eva-design/eva';
 
 import { ThemeContext } from './theme-context';
-import Home from './src/app/home';
-
+import Home from './src/app/calculadora';
+import Sobre from './src/app/sobre';
 /*
   const Stack = createStackNavigator();
   <Stack.Navigator>
@@ -41,6 +41,7 @@ import Home from './src/app/home';
 */
 const Tab = createBottomTabNavigator();
 const HomeScreen = () => <Home/>;
+const SobreScreen = () => <Sobre/>;
 
 /*
   HeaderMode
@@ -64,8 +65,8 @@ const BottomTabBar = ({ navigation, state }) => (
   <BottomNavigation
     selectedIndex={state.index}
     onSelect={index => navigation.navigate(state.routeNames[index])}>
-    <BottomNavigationTab title='HOME'/>
-    <BottomNavigationTab title='HOME2'/>
+    <BottomNavigationTab title={state.routeNames[0]}/>
+    <BottomNavigationTab title={state.routeNames[1]}/>
   </BottomNavigation>
 );
 
@@ -83,8 +84,8 @@ export default () => {
   <ApplicationProvider {...eva} theme={eva[theme]}>
     <NavigationContainer>
       <Tab.Navigator tabBar={props => <BottomTabBar {...props} />}>
-        <Tab.Screen name="HOME" component={HomeScreen} />
-        <Tab.Screen name="HOME2" component={HomeScreen} />
+        <Tab.Screen name="CALCULADORA" component={HomeScreen} />
+        <Tab.Screen name="SOBRE" component={SobreScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   </ApplicationProvider>

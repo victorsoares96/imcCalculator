@@ -1,4 +1,4 @@
-package com.hello_world_eva;
+package com.imccalculator;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "hello_world_eva";
+    return "imcCalculator";
   }
 }

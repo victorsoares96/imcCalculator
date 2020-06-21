@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.hello_world_eva">
+  package="com.imccalculator">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
