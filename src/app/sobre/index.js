@@ -25,7 +25,7 @@ export default function Sobre() {
         Calculadora de IMC
       </Text>
       <View style={styles.animation}>
-        <Lottie autoSize autoPlay style={{width: 250, height: 250}} 
+        <Lottie autoSize autoPlay style={{width: '80%'}}
         resizeMode='contain' source={require('../../assets/animations/balance2.json')}/>
       </View>
     </View>

@@ -26,9 +26,9 @@ export function Resultado() {
 
   function Animacao() {
     return (
-      <Lottie autoSize autoPlay loop style={{width: '100%'}} 
+      <Lottie autoSize autoPlay loop style={{width: '80%'}} 
       resizeMode='contain' source={
-        imc < 18.5 ? require('../../assets/animations/magro.json')
+        imc < 18.5 && imc > 0 ? require('../../assets/animations/magro.json')
         :
         imc > 18.5 && imc < 24.9 ? require('../../assets/animations/saudavel.json')
         :
@@ -45,7 +45,7 @@ export function Resultado() {
     return (
       <Text category='h2'>
         {
-          imc < 18.5 ? <Text category='h2'>Você está muito magro!</Text>
+          imc < 18.5 && imc > 0 ? <Text category='h2'>Você está muito magro!</Text>
           :
           imc > 18.5 && imc < 24.9 ? <Text category='h2'>Você está saudável!</Text>
           :
@@ -61,7 +61,7 @@ export function Resultado() {
   }
   function Texto() {
     return (
-      imc < 18.5 ?
+      imc < 18.5 && imc > 0 ?
         <Text style={styles.description} category='p1'>
           Seu Indíce de Massa Corpórea (IMC) é de {imc},
           o que mostra que você está com Magreza.

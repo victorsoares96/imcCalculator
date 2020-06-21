@@ -5,18 +5,25 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    padding: 10,
+  },
+  header: {
+    justifyContent: 'center',
+    flex: 1,
+    alignItems: 'center',
   },
   text: {
     textAlign: 'center',
   },
   formContainer: {
     flex: 1,
+    marginTop: 10,
   },
   button: {
-    margin: 40,
+    margin: 20,
   },
   input: {
-    margin: 10,
+    padding: 10,
   },
   description: {
     margin: 10,

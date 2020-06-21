@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     padding: 20,
   },
   header: {
-    marginTop: 50,
+    marginTop: 10,
     textAlign: 'left',
   },
   content: {
@@ -15,10 +15,9 @@ export const styles = StyleSheet.create({
     textAlign: 'left',
   },
   button: {
-    marginVertical: 30,
     position: 'absolute',
     left: '28%',
-    bottom: 50,
+    bottom: '5%',
   },
   animation: {
     alignItems: 'center',

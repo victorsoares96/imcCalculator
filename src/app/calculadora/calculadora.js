@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
-import React, { useState, useEffect, useContext } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { useState, useContext } from 'react';
+import { ScrollView, View } from 'react-native';
 import Lottie from 'lottie-react-native';
 import {
   Button,
@@ -42,44 +42,44 @@ export function Calculadora() {
   return (
   <Layout style={styles.container}>
     <SafeAreaView>
-      <Button appearance='ghost' style={styles.themeButton} accessoryLeft={themeStatus} onPress={themeContext.toggleTheme}>
+      <Button appearance='ghost' style={styles.button} accessoryLeft={themeStatus} onPress={themeContext.toggleTheme}>
         <Text appearance='hint' category='label'>Mudar o tema</Text>
       </Button>
-      <View style={{justifyContent: 'center', flex: 1, alignItems: 'center'}}>
+      <View style={styles.header}>
       <Text style={styles.text} category='h1'>
         Calculadora de IMC
       </Text>
       <Text style={styles.text} category='s1'>
         Teste aqui seu indice de massa corpórea!
       </Text>
-      <Lottie autoSize autoPlay style={{width: 250, height: 250}} 
-      resizeMode='contain' source={require('../../assets/animations/balance2.json')}/>
+      <Lottie autoPlay style={{width: '60%'}} resizeMode='contain'
+       source={require('../../assets/animations/balance2.json')}/>
       </View>
-    <View style={styles.formContainer}>
-      <Text style={{marginLeft: 10}} category='s1'>
-        Insira sua altura:
-      </Text>
-      <Input
-        style={styles.input}
-        keyboardType = 'numeric'
-        placeholder='Exemplo: 1.72'
-        value={altura}
-        onChangeText={altura => setAltura(altura)}
-      />
-      <Text style={{marginLeft: 10}} category='s1'>
-        Insira seu peso:
-      </Text>
-      <Input
-        style={styles.input}
-        keyboardType = 'numeric'
-        placeholder='Exemplo: 69.3'
-        value={peso}
-        onChangeText={peso => setPeso(peso)}
-      />
-      <Button style={styles.button} onPress={calcularIMC}>
-        CALCULAR
-      </Button>
-    </View>
+      <ScrollView style={styles.formContainer}>
+        <Text style={{marginLeft: 10}} category='s1'>
+          Insira sua altura:
+        </Text>
+        <Input
+          style={styles.input}
+          keyboardType = 'numeric'
+          placeholder='Exemplo: 1.72'
+          value={altura}
+          onChangeText={altura => setAltura(altura)}
+        />
+        <Text style={{marginLeft: 10}} category='s1'>
+          Insira seu peso:
+        </Text>
+        <Input
+          style={styles.input}
+          keyboardType = 'numeric'
+          placeholder='Exemplo: 69.3'
+          value={peso}
+          onChangeText={peso => setPeso(peso)}
+        />
+        <Button style={styles.button} onPress={calcularIMC}>
+          CALCULAR
+        </Button>
+      </ScrollView>
     </SafeAreaView>
   </Layout>
   );
