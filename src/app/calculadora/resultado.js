@@ -1,29 +1,42 @@
 /* eslint-disable prettier/prettier */
-import React, { useState, useEffect, useContext } from 'react';
-import { StyleSheet, View } from 'react-native';
+
+/*
+  Imports são importações de componentes para o projeto,
+  é como se fosse plugins que adicionam funcionalidades
+  a mais no projeto.
+*/
+import React from 'react';
 import Lottie from 'lottie-react-native';
 import {
   Button,
-  Icon,
   Layout,
   Text,
-  Input
 } from '@ui-kitten/components';
-import { ThemeContext } from '../../../theme-context';
-
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+
+/*
+  Esse styles é a folha de estilos da página calculadora,
+  folha de estilos é como se fosse o CSS do HTML, são
+  estilizações para os componentes, através das estilizações
+  podemos mudar a cor de letras, cor do plano de fundo de
+  um botão e etc...
+*/
 import { styles } from './styles';
 
-import Morreu from '../../assets/animations/morreu.json';
-
+/* Esta é a página Resultado que é uma página filha da Calculadora */
 export function Resultado() {
+  /* Estes 'const' é como se fossem variáveis */
   const route = useRoute();
   const navigation = useNavigation();
   const { imc } = route.params;
+
+  /* Função responsável por fazer o usuário voltar a tela principal */
   const voltarParaOInicio = () => (navigation.goBack());
 
+  /* 
+    Função que gerencia qual animação deve aparecer com base no
+    resultado do IMC
+  */
   function Animacao() {
     return (
       <Lottie autoSize autoPlay loop style={{width: '80%'}} 
@@ -41,6 +54,10 @@ export function Resultado() {
       }/>
     );
   }
+  /* 
+    Função que gerencia qual titulo deve aparecer com base no
+    resultado do IMC
+  */
   function Titulo() {
     return (
       <Text category='h2'>
@@ -59,6 +76,11 @@ export function Resultado() {
       </Text>
     );
   }
+
+  /* 
+    Função que gerencia qual texto deve aparecer com base no
+    resultado do IMC
+  */
   function Texto() {
     return (
       imc < 18.5 && imc > 0 ?

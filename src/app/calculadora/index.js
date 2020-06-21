@@ -8,6 +8,14 @@ import { Resultado } from './resultado';
 const CalculadoraScreen = () => <Calculadora/>;
 const ResultadoScreen = () => <Resultado/>;
 
+/**
+ * Todos esses nomes abaixo é o sistemas de rotas
+ * da aplicação. As rotas são as páginas da aplicação
+ * que no momento são apenas duas.
+ * 
+ * Calculadora - Faz o calculo do IMC
+ * Sobre - Um resumo da aplicação
+ */
 const Stack = createStackNavigator();
 export default function Home() {
   return (
